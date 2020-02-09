@@ -5,8 +5,8 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
 
 import './config/ReactotronConfig';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { ThemeProvider } from 'styled-components';
 import history from './services/history';
 import Routes from './routes';
 

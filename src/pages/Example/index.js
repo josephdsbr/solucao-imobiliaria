@@ -1,9 +1,11 @@
 import React from 'react';
 
+import { Container } from './styles';
+
 export default function Example() {
   return (
-    <div>
-      <h1>Ola</h1>
-    </div>
+    <Container className="row col-8 min-vh-100">
+      <p className="h1">Exemplo</p>
+    </Container>
   );
 }
