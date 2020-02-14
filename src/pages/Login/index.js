@@ -25,13 +25,17 @@ export default function Login() {
         <Button>Log in</Button>
       </HeaderContent>
       <BodyContent>
-        <Logo src={HomeLogo} alt="real-estate-solution" clasName="img-fluid" />
+        <Logo>
+          <img src={HomeLogo} alt="real-estate-solution" clasName="img-fluid" />
+          <span>Real Estate Solution</span>
+        </Logo>
         <Description>
           <span>Discover the best app to find the fome of your dreams</span>
         </Description>
         <Form>
           <header>
             <img src={HomeLogo} alt="real-state-solution" className="img-fluid"/>
+            <span>Real Estate Solution</span>
           </header>
           <Input
             placeholder="E-mail"
