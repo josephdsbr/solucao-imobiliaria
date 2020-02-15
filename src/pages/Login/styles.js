@@ -3,6 +3,7 @@ import { darken } from 'polished';
 
 export const Container = styled.div`
   padding: 1% 5%;
+  min-height: inherit;
   height: 100%;
   overflow: scroll;
   display: flex;
@@ -36,26 +37,32 @@ export const Button = styled.button`
 
 export const BodyContent = styled.div`
   display: grid;
-  grid-template-rows: 60% 30% 10%;
+  grid-template-rows: 70% 20% 10%;
   grid-template-columns: 70% 25%;
   grid-column-gap: 5%;
+  grid-row-gap: 5%;
 `;
 
 export const Logo = styled.div`
   grid-row: 1;
   grid-column: 1;
   display: flex;
-  flex-direction: column;
   max-height: 100%;
-  img {
-    max-height: 200px;
-    max-width: 200px;
-  }
+  align-items: flex-start;
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      max-height: 250px;
+      max-width: 250px;
+    }
 
-  span {
-    color: #fff;
-    font-style: normal;
-    font-size: 2rem;
+    span {
+      color: #fff;
+      font-style: normal;
+      font-size: 4rem;
+    }
   }
 `;
 
@@ -82,7 +89,7 @@ export const Form = styled.form`
 
   border: 1px solid #ffffff;
   box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
   display: flex;
   flex-direction: column;
@@ -114,7 +121,6 @@ export const Input = styled.input`
 
   ::placeholder {
     color: #cccccc;
-    font-family: 'Francois One';
     font-style: normal;
     font-weight: normal;
     font-size: 2rem;

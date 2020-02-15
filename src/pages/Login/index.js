@@ -26,15 +26,25 @@ export default function Login() {
       </HeaderContent>
       <BodyContent>
         <Logo>
-          <img src={HomeLogo} alt="real-estate-solution" clasName="img-fluid" />
-          <span>Real Estate Solution</span>
+          <section>
+            <img
+              src={HomeLogo}
+              alt="real-estate-solution"
+              className="img-fluid"
+            />
+            <span>Real Estate Solution</span>
+          </section>
         </Logo>
         <Description>
           <span>Discover the best app to find the fome of your dreams</span>
         </Description>
         <Form>
           <header>
-            <img src={HomeLogo} alt="real-state-solution" className="img-fluid"/>
+            <img
+              src={HomeLogo}
+              alt="real-state-solution"
+              className="img-fluid"
+            />
             <span>Real Estate Solution</span>
           </header>
           <Input
