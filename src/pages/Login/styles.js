@@ -3,6 +3,7 @@ import { Form as RocketForm, Input as RocketInput } from '@rocketseat/unform';
 import LoginForm from '../../components/LoginForm';
 
 export const Container = styled.div`
+  min-height: 100vh;
   height: 100%;
   width: 100%;
   display: flex;

@@ -9,14 +9,19 @@ import {
   Input,
   AccessForm,
   InputGroup,
+  LoginContent,
   Button,
 } from './styles';
 import HomeLogo from '../../assets/home-logo.png';
+import SocialMedia from '../../components/SocialMedia';
 
 export default function Contact() {
   return (
     <Container>
-      <AccessForm />
+      <LoginContent>
+        <AccessForm />
+        <SocialMedia />
+      </LoginContent>
       <Content>
         <Form>
           <FormHeader>

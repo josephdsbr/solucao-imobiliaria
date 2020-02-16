@@ -4,6 +4,7 @@ import Bg from '../../../assets/bg.png';
 export const Wrapper = styled.div`
   min-height: 100vh;
   background-image: url(${Bg});
+  background-size: cover;
 `;
 
 export const Content = styled.div`

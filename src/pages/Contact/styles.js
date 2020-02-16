@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { Form as RocketForm, Input as RocketInput } from '@rocketseat/unform';
 import LoginForm from '../../components/LoginForm';
 
@@ -16,6 +16,11 @@ export const Content = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+`;
+
+export const LoginContent = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Form = styled(RocketForm)`

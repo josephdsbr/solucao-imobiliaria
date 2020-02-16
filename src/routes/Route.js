@@ -10,17 +10,15 @@ export default function RouteWrapper({
   isPrivate,
   ...rest
 }) {
-  const signed = true;
+  const signed = false;
 
   const Layout = signed ? DefaultLayout : AuthLayout;
 
   return (
     <Route
-      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
       {...rest}
       render={props => (
         <Layout>
-          {/* eslint-disable-next-line react/jsx-props-no-spreading */}
           <Component {...props} />
         </Layout>
       )}
