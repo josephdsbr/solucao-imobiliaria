@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Logo from '../../assets/home-logo.png';
+import SocialMediaPhoto from '../../assets/mobile.png';
 
 import { Container } from './styles';
 
 export default function SocialMedia() {
   return (
     <Container>
-      <img src={Logo} alt="logo" className="img-fluid" />
+      <img src={SocialMediaPhoto} alt="social-media" className="img-fluid" />
     </Container>
   );
 }

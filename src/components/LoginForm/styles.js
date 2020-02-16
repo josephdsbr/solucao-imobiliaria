@@ -10,7 +10,7 @@ export const Form = styled(RocketForm)`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 0;
+  padding: 2% 0;
   border: 1px solid #ffffff;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 `;

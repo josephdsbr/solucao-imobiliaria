@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
+  position: relative;
   width: 100%;
   height: 100%;
   padding: 1%;
@@ -19,6 +20,7 @@ export const Info = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
   header {
     display: flex;
     flex-direction: column;
@@ -68,11 +70,17 @@ export const Side = styled.aside`
   grid-column: 1;
   grid-row: 1/3;
   background: #000;
+  ${props =>
+    props.display &&
+    css`
+      background: rgba(0, 0, 0, 0.8);
+    `};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
+
   header {
     display: flex;
     align-items: center;
@@ -105,6 +113,7 @@ export const Side = styled.aside`
   }
 
   main {
+    position: relative;
     padding: 5px 10px;
     display: grid;
     max-height: 60%;

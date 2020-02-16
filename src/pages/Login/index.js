@@ -1,73 +1,40 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import {
   Container,
-  HeaderContent,
-  Button,
-  BodyContent,
-  Logo,
-  Description,
+  Content,
   Form,
+  FormContent,
+  FormHeader,
   Input,
-  SubmitButton,
-  MobileInfo,
+  AccessForm,
+  LoginContent,
+  Button,
 } from './styles';
 import HomeLogo from '../../assets/home-logo.png';
-import MobileLogo from '../../assets/mobile.png';
+import SocialMedia from '../../components/SocialMedia';
 
 export default function Login() {
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
-
   return (
     <Container>
-      <HeaderContent>
-        <Button>Log in</Button>
-      </HeaderContent>
-      <BodyContent>
-        <Logo>
-          <section>
-            <img
-              src={HomeLogo}
-              alt="real-estate-solution"
-              className="img-fluid"
-            />
-            <span>Real Estate Solution</span>
-          </section>
-        </Logo>
-        <Description>
-          <span>Discover the best app to find the fome of your dreams</span>
-        </Description>
+      <LoginContent>
+        <AccessForm />
+        <SocialMedia />
+      </LoginContent>
+      <Content>
         <Form>
-          <header>
-            <img
-              src={HomeLogo}
-              alt="real-state-solution"
-              className="img-fluid"
-            />
+          <FormHeader>
+            <img src={HomeLogo} alt="logo" />
             <span>Real Estate Solution</span>
-          </header>
-          <Input
-            placeholder="E-mail"
-            value={email}
-            onChange={e => setEmail(e.target.value)}
-          />
-          <Input
-            placeholder="Password"
-            type="password"
-            value={password}
-            onChange={e => setPassword(e.target.value)}
-          />
-          <SubmitButton>Sign in</SubmitButton>
+            <h1>Login</h1>
+          </FormHeader>
+          <FormContent>
+            <Input name="email" placeholder="Email" />
+            <Input name="password" placeholder="Password" type="password" />
+          </FormContent>
+          <Button type="submit">Access Panel</Button>
         </Form>
-        <MobileInfo>
-          <img
-            src={MobileLogo}
-            alt="real-estate-solution-mobile"
-            className="img-fluid"
-          />
-        </MobileInfo>
-      </BodyContent>
+      </Content>
     </Container>
   );
 }
